@@ -9,10 +9,10 @@
                 result = "Enter valid numbers!";
             } else {
                 switch (operator) {
-                    case "+": result = num1 + num2; break;
-                    case "-": result = num1 - num2; break;
-                    case "*": result = num1 * num2; break;
-                    case "/": result = num2 !== 0 ? (num1 / num2).toFixed(2) : "Cannot divide by 0"; break;
+                    case "+": Math.floor(result = num1 + num2); break;
+                    case "-": Math.floor(result = num1 - num2); break;
+                    case "*": Math.floor(result = num1 * num2); break;
+                    case "/": result = num2 !== 0 ? Math.floor((num1 / num2).toFixed(2)) : "Cannot divide by 0"; break;
                     default: result = "Invalid operation!";
                 }
             }
